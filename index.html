@@ -1,12 +1,166 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | My project (2)</title>
-  </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=1804 height=1206 style="width: 1804px; height: 1206px; background: #231F20"></canvas>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNER Dynamometer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="Libraries\aos-master\src\sass\aos.scss"> -->
+</head>
+<body>
+    <navbar>
+        <ul>
+            <li>
+                <input type="radio" id="story" name="nav" checked>
+                <label for="story">Story</label>
+            </li>
+            <li>
+                <input type="radio" id="3D-toggle" name="nav">
+                <label for="3D-toggle">3D</label>
+            </li>
+            <li>
+                <input type="radio" id="AR-toggle" name="nav">
+                <label for="AR-toggle">AR</label>
+            </li>
+        </ul>
+    </navbar>
+
+    
+
+    <div class="intro hero story" id="hero">
+        <div class="img-frame">
+            <img src="Videos\Hero-Picture.jpg" class="hero-img">
+        </div>
+        
+        <div class="text-section story">
+            <h1 class="lner-title" id="lner-title">LNER Dynamometer</h1>
+            <p><span class="arrow"> ^ </span>Scroll Down</p>
+        </div>
+        
+    </div>
+
+    <section class="section 1 story" id="section_1">
+        <div class="box small"  id="creator-transition">
+            <h1 class="creator-title">The Engineer</h1>
+            <!-- <p>North Eastern Railway (NER) at Darlington Works</p> -->
+            <img src="Videos\H_N_Gresley.jpg" class="creator-img">
+        </div>
+
+        <div class="box" id="creator-transition-2">
+            <h2>Nigel Gresley</h2>
+            <br>
+            <p>Sir Herbert Nigel Gresley CBE (19 June 1876 – 5 April 1941)[1] was a British railway engineer. He was one of Britain's most famous steam locomotive engineers, who rose to become Chief Mechanical Engineer (CME) of the London and North Eastern Railway (LNER).
+                <br><br>
+                He was the designer of some of the most famous steam locomotives in Britain, including the <span class="bold">LNER Class A1 (Flying Scotsman)</span> and <span class="bold">LNER Class A4 4-6-2 Pacific engines (Mallard 4468)</span>.
+            </p>
+            <br><br>
+            <div class="images">
+                <div class="image-wrap">
+                    <img src="Videos\flying-scotsman.webp" class="train-img" id="flying-scots">
+                    <label for="flying-scots">Flying Scotsman</label>
+                </div>
+
+                <div class="image-wrap">
+                    <img src="Videos\mallard-picture.jpg" class="train-img" id="mallard">
+                    <label for="mallard">Mallard 4468</label>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="intro" id="intro">
+
+        <div class="intro-vid story" id="intro-vid">
+            <video src="Videos\Train_Transition_1.mp4" ></video>
+        </div>
+
+            <div class="scrollable story">
+
+                <h1 class="carriage-intro" id="carriage-intro">The Fast History of <br> LNER Dynamometer Car</h1>
+                
+                <div class="box style-1">
+
+                    <h1 class="creator-title">Built in 1906,</h1>
+
+                        <p>by the North Eastern Railway (NER) at Darlington Works, the car is a mobile laboratory used principally to measure the speed and power of a locomotive. <br> <br>
+            
+                            Most steam locomotives in the UK did not have speedometers in the cab until the 1950's, and even after that some were not fitted with them. 
+                            
+                            The mobile laboratory also enabled it to measure factors which may affect a steam locomative's ability to pull: <br> <br>
+                        </p>
+
+                        <div class="item-class">
+                            <div class="pos-bottom">
+                                <h1 class="bold padding">
+                                    Steam flow from the boiler to the cylinders<br>
+                                </h1>
+                            </div>
+                            <div class="sticky-img">
+                                <img id="img-1" src="Videos\SteamFlowMeter.png"><br>
+                                <label for="img-1">Steam Flow Meter</label>
+                            </div>
+                        </div>
+
+                        <div class="item-class">
+                            <div class="pos-bottom">
+                                <h1 class="bold padding">
+                                    Steam temperature in the cylinders<br>
+                                </h1>
+                            </div>
+                            <div class="sticky-img">
+                                <img id="img-2" src="Videos\Steam Temp in cyl.png"><br>
+                                <label for="img-2">Temperature Gauge</label>
+                            </div>
+                        </div>
+
+                        <div class="item-class">
+                            <div class="pos-bottom">
+                                <h1 class="bold padding">
+                                    Coal consumption<br>
+                                </h1>
+                            </div>
+                            <div class="sticky-img">
+                                <img id="img-3" src="Videos\pyrometer.png"><br>
+                                <label for="img-3">Pyrometer</label>
+                            </div>
+                        </div>
+
+                        <div class="item-class">
+                            <div class="pos-bottom">
+                                <h1 class="bold padding">
+                                    Water usage<br>
+                                </h1>
+                            </div>
+                            <div class="sticky-img">
+                                <img id="img-4" src="Videos\WaterPressureGauge.png"><br>
+                                <label for="img-4" >Water Pressure Gauge</label>
+                            </div>
+                        </div>
+
+                        <last class="box style-1 fh">
+
+                            <p>
+                                It was also used to determine the exact locations of Stations/Signal boxes and tabulates how the locomotive was worked by the driver in detail.
+                            </p>
+                        </last>
+                            
+                    
+                </div>
+            <div>
+        </div>
+    </div>
+
+    <section class="section 1 story" id="section_1">
+
+    </section>
+
+    
+    <canvas id="unity-canvas" width=100% height=100vh style="width: 100%; height: 100vh; background: #231F20"></canvas>
+    <section class="section 1 green" id="ar">
+
+    </section>
     <script src="Build/Web.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -17,9 +171,20 @@
         companyName: "DefaultCompany",
         productName: "My project (2)",
         productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        matchWebGLToCanvasSize: true, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
-  </body>
+
+    <!-- SCRIPTS -->
+    <script src="Libraries\ScrollMagic\scrollmagic\uncompressed\ScrollMagic.js"></script>
+    <script src="Libraries\ScrollMagic\scrollmagic\uncompressed\plugins\debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+    <script type="module"src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
 </html>

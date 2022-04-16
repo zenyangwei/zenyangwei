@@ -1,0 +1,318 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Dela-Gothic";
+    src: url(DelaGothicOne-Regular.ttf);
+}
+
+body{
+    font-family: sans-serif;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+p{
+    font-size: 20px;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-top: 5em;
+    
+}
+
+.img-frame{
+    overflow: hidden;
+    /* height: 76%; */
+    border-radius: 20px;
+    margin: auto;
+}
+
+h1{
+    font-size: 50px;
+    text-shadow: 0px 0px 30px #fff;
+}
+
+.lner-title{
+    /* height: 20%; */
+    padding-top: 0.5em;
+    padding-bottom: 0%;
+    
+    
+}
+
+.hero-img{
+    width: 100%;
+    position: relative;
+    top: -12%;
+
+}
+
+.box{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.creator-title{
+    padding-bottom: 0.5em;
+}
+
+.text-section{
+    text-align: center;
+    display: flex;
+}
+
+.text-section p{
+    display: flex;
+    font-size: 20px;
+    padding-top: 1.5em;
+    margin: auto;
+    margin-right: 0%;
+}
+
+.text-section p span{
+    padding: 0.5em;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    transform: rotate(180deg) scaleX(2);
+}
+
+.intro{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    bottom: 0%;
+    /* position: fixed;
+    top: 0%; */
+    z-index: 100;
+}
+
+.intro-vid{
+    height: 100vh;
+}
+
+.intro video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.creator-img{
+    /* padding: 2em; */
+    padding-left: 0%;
+    width:70%;
+    border-radius: 20px;
+}
+
+.small{
+    width: 50%;
+}
+
+.section{
+    height: 100vh;
+    padding: 2em;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.section, .hero{
+    border-bottom: 1px solid #0002;
+}
+
+canvas{
+    display: block;
+    position: fixed;
+    top: 0%;
+}
+
+navbar{
+    /* margin: auto; */
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    justify-items: center;
+    
+    
+    
+}
+
+navbar ul{
+    margin: auto;
+    display: flex;
+    background-color: #ddd;
+    border-radius: 15px;
+    mix-blend-mode: difference;
+    box-shadow: 0px 0px 50px #0002;
+}
+
+navbar li{
+    padding: 0.5em;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    
+}
+
+input[type="radio"]{
+    display: none;
+    background-color: #fff0;
+    transition: all 1s;
+}
+
+label{
+    color: #000;
+    padding: 0.5em;
+    /* mix-blend-mode: difference; */
+    /* text-shadow: 2px 2px 10px #fff; */
+}
+
+input[type="radio"]:checked + label{
+    border-radius: 10px;
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+
+#titleTrigger{
+    display: flex;
+    position: absolute;
+    top: 1000px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.train-img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.image-wrap{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+
+.images{
+    /* height: 20%; */
+    justify-content: space-between;
+    display: flex;
+}
+
+.carriage-intro{
+    position: relative;
+    bottom: 5%;
+    padding-left: 1em;
+    font-size: 60px;
+    /* mix-blend-mode: difference; */
+}
+
+.box{
+    padding: 3em;
+}
+
+.large-font{
+    font-size: 20px;
+}
+
+.custom{
+    height: 100%;
+}
+
+.style-1{
+    margin-top: 10em;
+    /* border-right: 1px solid #0003; */
+    padding: 5em;
+}
+
+.item-class{
+    display: flex;
+    flex-direction: row;
+    height: 150vh;
+    position: relative;
+    justify-content: space-between;
+}
+
+.padding{
+    justify-items: end;
+    width: 100%;
+    height: 10%;
+    /* padding-top: 100%; */
+}
+
+.pos-bottom{
+    display: flex;
+    align-items: center;
+    
+    width: 50%;
+}
+
+.scrollable{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 90%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.scrollable p{
+    font-size: 30px;
+    line-height: 2em;
+    font-weight: 600;
+}
+
+.text-bg{
+    background-color: #ffffffaa;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+.sticky-img{
+    border-radius: 20px;
+    position: sticky;
+    display: block;
+    top: 25%;
+    transform: translate(0%, 0%);
+    max-height: 60vh;
+    margin: 3em;
+}
+
+.sticky-img img{
+    border-radius: 20px;
+    max-height: 60vh;
+    
+}
+
+.fh{
+    height: 100vh;
+}
+
+.green{
+    background-color: #00ff00;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
